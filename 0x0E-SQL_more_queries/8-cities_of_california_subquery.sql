@@ -5,4 +5,5 @@ SELECT `id`, `name`
  WHERE `state_id` IN
        (SELECT `id`
 	  FROM `states`
-	 WHERE
+	 WHERE `name` = "California")
+ ORDER BY `id`;
